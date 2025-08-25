@@ -19,7 +19,8 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
 
-  const categories = ["electronics", "jewelery", "men's clothing", "women's clothing"];
+  const categories = ["smartphones", "laptops", "fragrances", "skincare", "groceries", "home-decoration"];
+
 
   const fetchProducts = async () => {
     if (!category.trim()) {
@@ -66,7 +67,8 @@ function App() {
         <input
           type="text"
           className="form-control"
-          placeholder="Search categories: electronics, jewelery, men's clothing, women's clothing"
+          placeholder="Search categories: smartphones, laptops, fragrances, skincare, groceries, home-decoration"
+
           value={category}
           onChange={(e) => setCategory(e.target.value)}
           list="category-options"
