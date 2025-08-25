@@ -37,7 +37,8 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post('http://localhost:5000/api/fetch-products', { category });
+     const res = await axios.post('https://api-driven-app-server.vercel.app/api/fetch-products', { category });
+
       setProducts(res.data);
       setCurrentPage(1);
       setSearched(true);
